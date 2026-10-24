@@ -4,6 +4,12 @@
 
 ![书架](docs/shelf.png)
 
+## 下载
+
+**[最新版 APK](https://github.com/linyanquan2026-hub/shiye-reader/releases/latest)** · Android 8.0+ · 约 4.4 MB
+
+> 安装包用调试签名签发，仅供测试；介意的话可以克隆源码自己重签。
+
 ## 特性
 
 - **多格式导入**：TXT / Markdown / HTML / EPUB / DOCX / PPTX / PDF（文字版）
