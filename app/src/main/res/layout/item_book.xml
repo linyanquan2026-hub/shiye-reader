@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/card_bg"
+    android:padding="20dp"
+    android:layout_marginBottom="12dp">
+
+    <TextView
+        android:id="@+id/bookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text"
+        android:textSize="18sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/bookMeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/text3"
+        android:textSize="12sp"
+        android:fontFeatureSettings="tnum" />
+
+    <View
+        android:id="@+id/bookProgress"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="14dp"
+        android:background="#1AFFFFFF" />
+</LinearLayout>

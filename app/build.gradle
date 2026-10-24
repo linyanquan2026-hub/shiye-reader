@@ -1,0 +1,42 @@
+plugins { id 'com.android.application' }
+
+android {
+    namespace 'app.shelf'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'app.shelf'
+        minSdk 26
+        targetSdk 34
+        versionCode 8
+        versionName '2.6'
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        debug { }
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/DEPENDENCIES', 'META-INF/LICENSE', 'META-INF/LICENSE.txt',
+                         'META-INF/NOTICE', 'META-INF/NOTICE.txt',
+                         'org/bouncycastle/pqc/**']
+        }
+    }
+
+    aaptOptions { noCompress 'txt' }
+}
+
+dependencies {
+    implementation 'com.tom-roush:pdfbox-android:2.0.27.0'
+}

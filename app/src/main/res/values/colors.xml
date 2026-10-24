@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg0">#0B0B0D</color>
+    <color name="bg1">#111114</color>
+    <color name="bg2">#16161B</color>
+    <color name="bg3">#1E1E24</color>
+    <color name="text">#EDEDF1</color>
+    <color name="text2">#9A9AA5</color>
+    <color name="text3">#6B6B76</color>
+    <color name="accent">#E7B778</color>
+    <color name="accent2">#8FA8FF</color>
+    <color name="hairline">#1FFFFFFF</color>
+</resources>

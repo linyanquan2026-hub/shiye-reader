@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <!-- 标题行 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:paddingTop="30dp"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/folderBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/chip_bg"
+                android:paddingLeft="14dp"
+                android:paddingRight="16dp"
+                android:paddingTop="9dp"
+                android:paddingBottom="9dp"
+                android:text="‹ 书架"
+                android:textColor="@color/text2"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/shelfTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="@color/text"
+                    android:textSize="30sp"
+                    android:letterSpacing="0.02"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:fontFamily="serif" />
+
+                <TextView
+                    android:id="@+id/shelfMeta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="本地书架"
+                    android:textColor="@color/text3"
+                    android:textSize="12sp"
+                    android:fontFeatureSettings="tnum" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/importBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/chip_bg"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:text="@string/import_txt"
+            android:textColor="@color/text2"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- 继续阅读 -->
+    <LinearLayout
+        android:id="@+id/heroCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_bg"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/heroEyebrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="继 续 阅 读"
+                android:textColor="@color/accent"
+                android:textSize="10.5sp"
+                android:letterSpacing="0.14" />
+
+            <TextView
+                android:id="@+id/heroTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text"
+                android:textSize="23sp"
+                android:fontFamily="serif"
+                android:maxLines="2"
+                android:ellipsize="end" />
+
+            <TextView
+                android:id="@+id/heroSub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:textColor="@color/text2"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:id="@+id/heroFill"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="43"
+                        android:background="@color/accent" />
+
+                    <View
+                        android:id="@+id/heroRest"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="57"
+                        android:background="#242430" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/heroPct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:textColor="@color/accent"
+                    android:textSize="11sp"
+                    android:fontFeatureSettings="tnum" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <app.shelf.CoverView
+            android:id="@+id/heroCover"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp" />
+    </LinearLayout>
+
+    <!-- 书架标题 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="书架"
+            android:textColor="@color/text"
+            android:textSize="17sp"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:id="@+id/shelfCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text3"
+            android:textSize="12sp"
+            android:fontFeatureSettings="tnum" />
+    </LinearLayout>
+</LinearLayout>

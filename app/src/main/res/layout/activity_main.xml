@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg0">
+
+    <ListView
+        android:id="@+id/bookList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:clipToPadding="false"
+        android:paddingBottom="28dp"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:id="@+id/emptyState"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="书页之间"
+            android:textColor="@color/text2"
+            android:textSize="22sp"
+            android:fontFamily="serif"
+            android:letterSpacing="0.08" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="总有一页，是留给你的。"
+            android:textColor="@color/text3"
+            android:textSize="14sp"
+            android:fontFamily="serif" />
+
+        <TextView
+            android:id="@+id/emptyImport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:background="@drawable/chip_bg"
+            android:paddingLeft="26dp"
+            android:paddingRight="26dp"
+            android:paddingTop="13dp"
+            android:paddingBottom="13dp"
+            android:text="导入第一本书"
+            android:textColor="@color/text2"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- 多选操作条 -->
+    <LinearLayout
+        android:id="@+id/pickBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@drawable/sheet_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="14dp"
+        android:paddingBottom="22dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/pickCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/text3"
+            android:textSize="12sp"
+            android:fontFeatureSettings="tnum" />
+
+        <TextView
+            android:id="@+id/pickMerge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_primary"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:text="合并成一本"
+            android:textColor="#141416"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:id="@+id/pickFolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/chip_bg"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:text="建合集"
+            android:textColor="@color/text2"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/pickCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="6dp"
+            android:paddingTop="11dp"
+            android:paddingBottom="11dp"
+            android:text="取消"
+            android:textColor="@color/text3"
+            android:textSize="13sp" />
+    </LinearLayout>
+</FrameLayout>

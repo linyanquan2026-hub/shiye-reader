@@ -1,0 +1,26 @@
+# 构建产物
+/build/
+/app/build/
+/captures/
+*.apk
+*.aab
+
+# Gradle
+.gradle/
+/local.properties
+gradle-app.setting
+
+# IDE
+.idea/
+*.iml
+*.hprof
+
+# 本机测试用的素材（不进仓库）
+test/
+test_novel.txt
+design/
+tmp/
+
+# 系统
+.DS_Store
+Thumbs.db
